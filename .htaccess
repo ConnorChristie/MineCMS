@@ -1,0 +1,8 @@
+RewriteEngine On
+#RewriteRule ^([0-9a-zA-Z]+)$ index.php?v1=$1 [L]
+#RewriteRule ^([0-9a-zA-Z]+)/([0-9a-zA-Z\-]+)$ index.php?v1=$1&v2=$2 [L]
+#RewriteRule ^([0-9a-zA-Z]+)/([0-9a-zA-Z\-]+)/([0-9a-zA-Z\/]+)$ index.php?v1=$1&v2=$2&v3=$3 [L]
+
+RewriteRule ^([0-9a-zA-Z\-]+)$ index.php?v1=$1 [L]
+RewriteRule ^([0-9a-zA-Z\-]+)/([0-9a-zA-Z\/]+)$ index.php?v1=$1&v2=$2 [L]
+RewriteRule ^([0-9a-zA-Z\-]+)/([0-9a-zA-Z\/]+)/([0-9a-zA-Z\-]+)$ index.php?v1=$1&v2=$2&v3=$3 [L]
