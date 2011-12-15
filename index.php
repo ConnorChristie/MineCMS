@@ -21,7 +21,7 @@ if (defined("V3")) {
 else
     $params = array();
 
-//Each url recieved is in the format /model/action/param1/param2...
+//Each url recieved is in the format /controller/action/param1/param2...
 //The above code sets model to V1, action to V2 and params to V3. V3 is also passed to the assoc array $params.
 
 
